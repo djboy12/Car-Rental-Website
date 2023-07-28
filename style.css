@@ -444,7 +444,7 @@ header{
         order: 2;
     }
 }
-@media (max-width: 563px){
+@media (max-width: 568px){
     .copyright{
         flex-direction:column;
     }
@@ -457,7 +457,7 @@ header{
 }
 @media (max-width: 350px){
     header{
-        padding: 6px 14px;
+        padding: 4px 14px;
     }
     .logo img{
         width: 30px;
@@ -478,3 +478,114 @@ header{
         grid-template-columns: repeat(auto-fit,minimax(254px,auto));
     }
 }
+
+/*SignUp and SignIn Style*/
+body{
+    background-image: url('images/Car\ Website\ –\ 1@2x.png');
+    background-position: center;
+    background-size: cover;
+    font-family: 'Inter';
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .form{
+    width: 100%;
+    max-width: 468px;
+    background-color: #fff;
+    border-radius: 32px;
+    padding: 25px;
+    /*display: flex;
+    justify-content: space-between;*/
+    flex-wrap: wrap;
+    position: relative;
+    left: -300px;
+    margin-bottom: -109px;
+  }
+  /*.form:before{
+    position: absolute;
+    content: "OR";
+    background-color: #ff3636;
+    padding: 10px;
+    border-radius: 50%;
+    color: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  .form:after{
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 300px;
+    background-color: #ddd;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }*/
+  .form form{
+    flex-basis: 40%;
+  }
+  .title{
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  .single-form{
+    position: relative;
+    margin: 10px 0;
+  }
+  .single-form label{
+    display: block;
+    margin-bottom: 7px;
+    font-size: 18px;
+  }
+  .single-form input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  .single-form i{
+    position: absolute;
+    right: 10px;
+    top: 43px;
+    color: #aaa;
+  }
+  .form input[type="submit"]{
+    margin-top: 10px;
+    background-color: #ff3636;
+    border: 0;
+    font-size: 14px;
+    transition: .3s;
+    color: #fff;
+    padding: 10px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Inter';
+    font-weight: 700;
+  }
+  .form input[type="submit"]:hover{
+    background-color: #333;
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .form{
+      flex-direction: column;
+    }
+    .form form {
+      margin-bottom: 120px;
+    }
+    .form::after {
+      top: 52%;
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+    .form::before {
+      top: 52%;
+    }
+  }
