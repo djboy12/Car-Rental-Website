@@ -16,7 +16,6 @@ const sr = ScrollRevel ({
     duration: 400,
     reset: true
 })
-
 sr.reveal('.text',{delay: 200, origin: 'top'})
 sr.reveal('.form-container form',{delay: 800, origin: 'left'})
 sr.reveal('.heading',{delay: 800, origin: 'top'})
@@ -25,4 +24,15 @@ sr.reveal('.services-container .box',{delay: 600, origin: 'top'})
 sr.reveal('.about-container .box',{delay: 600, origin: 'top'})
 sr.reveal('.reviews-container',{delay: 600, origin: 'top'})
 sr.reveal('.newsletter .box',{delay: 400, origin: 'bottom'})
-
+function popup(popup_name)
+    {
+      get_popup=document.getElementById(popup_name);
+      if(get_popup.style.display=="flex")
+      {
+        get_popup.style.display="none";
+      }
+      else
+      {
+        get_popup.style.display="flex";
+      }
+    }

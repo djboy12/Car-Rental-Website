@@ -1,7 +1,6 @@
 <?php
 require('connection.php');
 session_start();
-
 // Login
 if (isset($_POST['login'])) {
     $email_username = $_POST['email_username'];
